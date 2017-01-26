@@ -10,7 +10,6 @@ $response = file_get_contents($url);
 echo $response;*/
 
 $url = 'http://monerodice.net/api/betStats';
-=&=&=1
 $data = array('public_key' => 'CfVBTe3aAEV2YDThBXpzmB3mPKnM3lCu', 'private_key' => 'Lfj1Hi3Vqr297R98o7xlOC3Qac7CT8Yz', 'input_limit' => '1');
 
 // use key 'http' even if you send the request to https://...
