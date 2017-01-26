@@ -28,7 +28,7 @@ if ($result === FALSE) {  }
 
 var_dump($result);*/
 
-$url = 'http://www.someurl.com';
+$url = 'http://monerodice.net/api/betStats';
 $myvars = "public_key=CfVBTe3aAEV2YDThBXpzmB3mPKnM3lCu& private_key=Lfj1Hi3Vqr297R98o7xlOC3Qac7CT8Yz& input_limit=1";
 
 $ch = curl_init( $url );
