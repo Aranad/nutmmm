@@ -9,7 +9,7 @@ $response = file_get_contents($url);
 
 echo $response;*/
 
-$url = 'http://monerodice.net/api/betStats';
+/*$url = 'http://monerodice.net/api/betStats';
 $data = array('public_key' => 'CfVBTe3aAEV2YDThBXpzmB3mPKnM3lCu', 'private_key' => 'Lfj1Hi3Vqr297R98o7xlOC3Qac7CT8Yz', 'input_limit' => '1');
 
 // use key 'http' even if you send the request to https://...
@@ -24,9 +24,21 @@ $context  = stream_context_create($options);
 $result = file_get_contents($url, false, $context);
 
 	echo $result;
-if ($result === FALSE) { /* Handle error */ }
+if ($result === FALSE) {  }
 
-var_dump($result);
+var_dump($result);*/
+
+$url = 'http://www.someurl.com';
+$myvars = "public_key=CfVBTe3aAEV2YDThBXpzmB3mPKnM3lCu& private_key=Lfj1Hi3Vqr297R98o7xlOC3Qac7CT8Yz& input_limit=1";
+
+$ch = curl_init( $url );
+curl_setopt( $ch, CURLOPT_POST, 1);
+curl_setopt( $ch, CURLOPT_POSTFIELDS, $myvars);
+curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
+curl_setopt( $ch, CURLOPT_HEADER, 0);
+curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
+
+$response = curl_exec( $ch );
 ?>
 
 </body>
