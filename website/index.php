@@ -35,7 +35,7 @@ $url = 'https://games.bitcoin.com/account/balance?account_key=7f06f8e1257cc0b5a0
 
 $ch = curl_init( $url );
 curl_setopt( $ch, CURLOPT_POST, 1);
-curl_setopt( $ch, CURLOPT_POSTFIELDS, $myvars);
+//curl_setopt( $ch, CURLOPT_POSTFIELDS, $myvars);
 curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
 curl_setopt( $ch, CURLOPT_HEADER, 0);
 curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
