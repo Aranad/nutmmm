@@ -4,10 +4,10 @@
 
 <?php
 //$url = urlencode("http://xyz.com/api?apikey=foo&v1=bar&v2=baz");
-/*$url = "https://monerodice.net/api/betStats?public_key=CfVBTe3aAEV2YDThBXpzmB3mPKnM3lCu&private_key=Lfj1Hi3Vqr297R98o7xlOC3Qac7CT8Yz&input_limit=1";
+$url = "https://games.bitcoin.com/account/balance?account_key=7f06f8e1257cc0b5a04d5dffc1689c73";
 $response = file_get_contents($url);
 
-echo $response;*/
+echo $response;
 
 /*$url = 'http://monerodice.net/api/betStats';
 $data = array('public_key' => 'CfVBTe3aAEV2YDThBXpzmB3mPKnM3lCu', 'private_key' => 'Lfj1Hi3Vqr297R98o7xlOC3Qac7CT8Yz', 'input_limit' => '1');
@@ -34,7 +34,7 @@ $url = 'https://games.bitcoin.com/account/balance?account_key=7f06f8e1257cc0b5a0
 //$myvars = "account_key=7f06f8e1257cc0b5a04d5dffc1689c73";
 
 $ch = curl_init( $url );
-curl_setopt( $ch, CURLOPT_POST, 1);
+curl_setopt( $ch, CURLOPT_GET, 1);
 //curl_setopt( $ch, CURLOPT_POSTFIELDS, $myvars);
 curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
 curl_setopt( $ch, CURLOPT_HEADER, 0);
