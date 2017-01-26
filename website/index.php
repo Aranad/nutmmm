@@ -27,7 +27,7 @@ $result = file_get_contents($url, false, $context);
 if ($result === FALSE) {  }
 
 var_dump($result);*/
-
+/*
 //$url = 'http://monerodice.net/api/betStats';
 $url = 'https://games.bitcoin.com/account/balance?account_key=7f06f8e1257cc0b5a04d5dffc1689c73';
 //$myvars = "public_key=CfVBTe3aAEV2YDThBXpzmB3mPKnM3lCu& private_key=Lfj1Hi3Vqr297R98o7xlOC3Qac7CT8Yz& input_limit=1";
@@ -42,7 +42,7 @@ curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
 
 $response = curl_exec( $ch );
 
-echo $response;
+echo $response;*/
 ?>
 
 </body>
